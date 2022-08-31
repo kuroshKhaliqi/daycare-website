@@ -28,28 +28,30 @@
       </div>
       <div class="subMainContainer">
         <h1 id="mainText">Daycare for kids 12 and under.</h1>
-        <select name="age" id="ages">
-          <option value="">Age of child</option>
-          <option>1 and under</option>
-          <option>2 years old</option>
-          <option>3 years old</option>
-          <option>4 years old</option>
-          <option>5 years old</option>
-          <option>6 years old</option>
-          <option>7 years old</option>
-          <option>8 years old</option>
-          <option>9 years old</option>
-          <option>10 years old</option>
-          <option>11 years old</option>
-          <option>12 years old</option>
-        </select>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-        />
-        <button id="submit" type="submit">Submit</button>
+        <form name="contact" method="POST" data-netlify="true">
+          <select name="age" id="ages">
+            <option value="">Age of child</option>
+            <option>1 and under</option>
+            <option>2 years old</option>
+            <option>3 years old</option>
+            <option>4 years old</option>
+            <option>5 years old</option>
+            <option>6 years old</option>
+            <option>7 years old</option>
+            <option>8 years old</option>
+            <option>9 years old</option>
+            <option>10 years old</option>
+            <option>11 years old</option>
+            <option>12 years old</option>
+          </select>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <button id="submit" type="submit">Submit</button>
+        </form>
       </div>
       <div class="subMainContainer">
         <img src="images/he2.jpg" alt="" />
@@ -73,5 +75,21 @@
       <span>&copy; 2022 Frozan's Daycare Website</span>
       <span class="logoFooter"> Frozan's Daycare</span>
     </footer>
+    <script>
+      document.querySelector("form").addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        let myForm = document.getElementById("pizzaOrder");
+        let formData = new FormData(myForm);
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      };
+    </script>
   </body>
 </html>
