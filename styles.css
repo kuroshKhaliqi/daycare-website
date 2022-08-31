@@ -127,3 +127,20 @@ form {
   flex-direction: column;
   width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  #firstsubMain {
+    display: none;
+  }
+  .subMainContainer,
+  .subcontact {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  .contactContainer {
+    flex-direction: column;
+  }
+}
