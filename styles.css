@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.titleBar {
+  background-color: #64cbda;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.mainContainer {
+  display: flex;
+  margin-top: 4em;
+}
+
+.subMainContainer {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+#mainText {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#submit {
+  padding: 0.5em;
+  background-color: #64cbda;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#email {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+#ages {
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.contactContainer {
+  display: flex;
+}
+
+.subcontact {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+.subcontact p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-left: 0.5em;
+}
+
+.contactIcon {
+  width: 30px;
+
+  height: 30px;
+}
+.about {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  padding: 8em 0;
+}
+
+.aboutImg {
+  width: 25%;
+  /* border: 2px solid blue; */
+  margin-right: 2em;
+}
+
+.aboutContent {
+  width: 33%;
+  /* border: 2px solid blue; */
+}
+
+.aboutText {
+  margin-bottom: 1em;
+}
+.aboutParagraph {
+  line-height: 1.7rem;
+}
+
+footer {
+  padding: 3em 8em;
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid gray;
+  width: 80%;
+  margin: auto;
+}
+
+.logoFooter {
+  font-weight: bold;
+}
