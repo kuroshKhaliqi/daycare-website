@@ -26,10 +26,10 @@
       <div class="subMainContainer">
         <img src="images/he1.png" alt="" />
       </div>
-      <form name="contact" method="POST" data-netlify="true"></form>
+      <form name="contact" method="POST" data-netlify="true">
         <div class="subMainContainer">
           <h1 id="mainText">Daycare for kids 12 and under.</h1>
-        
+
           <select name="ages" id="ages">
             <option value="">Age of child</option>
             <option>1 and under</option>
@@ -80,7 +80,7 @@
     <script>
       document.querySelector("form").addEventListener("submit", handleSubmit);
 
-      function handleSubmit (e) {
+      function handleSubmit(e) {
         e.preventDefault();
         let myForm = document.getElementById("pizzaOrder");
         let formData = new FormData(myForm);
@@ -91,7 +91,7 @@
         })
           .then(() => console.log("Form successfully submitted"))
           .catch((error) => alert(error));
-      };
+      }
     </script>
   </body>
 </html>
