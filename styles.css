@@ -129,6 +129,9 @@ form {
 }
 
 @media (max-width: 500px) {
+  .titleBar {
+    text-align: center;
+  }
   .mainContainer {
     flex-direction: column;
     margin: 0;
